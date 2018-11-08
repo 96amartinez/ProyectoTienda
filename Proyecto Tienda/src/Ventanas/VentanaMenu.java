@@ -72,7 +72,7 @@ public class VentanaMenu extends JFrame {
 		JLabel lblFoto1 = new JLabel("New Label");
 		lblFoto1.setBounds(33,352,126,120);
 		contentPane.add(lblFoto1);
-		ImageIcon myImage = new ImageIcon("gif/nike.gif") /*+g[i])*/;
+		ImageIcon myImage = new ImageIcon("gif/adidas.gif") /*+g[i])*/;
 		Image img = myImage.getImage();
 		Image newImg = img.getScaledInstance(lblFoto1.getWidth(), lblFoto1.getHeight(), Image.SCALE_SMOOTH);
 		ImageIcon image = new ImageIcon(newImg);
