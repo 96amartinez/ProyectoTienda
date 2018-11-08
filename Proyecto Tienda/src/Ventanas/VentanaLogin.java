@@ -171,7 +171,7 @@ public class VentanaLogin extends JFrame implements Runnable{
 					//Nick y contraseña bien introducidos por lo tanto el usuario existe
 					JOptionPane.showMessageDialog(null, "Bienvenido a Mi Tienda");
 					v.dispose();
-					VentanaMenu vm = new VentanaMenu();
+					VentanaMenu vm = new VentanaMenu(v);
 					vm.setVisible(true);
 					//musica();
 					

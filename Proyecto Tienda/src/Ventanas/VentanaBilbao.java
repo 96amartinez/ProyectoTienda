@@ -51,7 +51,7 @@ public class VentanaBilbao extends JFrame {
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				v.dispose();
-				VentanaMenu vm = new VentanaMenu();
+				VentanaMenu vm = new VentanaMenu(v);
 				vm.setVisible(true);
 				
 			}

@@ -1,13 +1,11 @@
 package Ventanas;
 
-
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Frame;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,16 +18,15 @@ import java.awt.Font;
 import java.awt.Color;
 
 //Las ventanas de los sitios van a tener el mismo formato, como juntarlas
-public class VentanaPoza extends JFrame {
+public class VentanaMadrid extends JFrame {
 
 	private JPanel contentPane;
 	JFrame v = this;
 	
-
 	/**
 	 * Create the frame.
 	 */
-	public VentanaPoza() {
+	public VentanaMadrid() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1100, 550);
@@ -42,7 +39,7 @@ public class VentanaPoza extends JFrame {
 		JPanel panelNorte = new JPanel();
 		contentPane.add(panelNorte, BorderLayout.NORTH);
 		
-		JLabel lblBilbao = new JLabel("Poza de la Sal");
+		JLabel lblBilbao = new JLabel("Madrid");
 		lblBilbao.setFont(new Font("Lucida Calligraphy", Font.PLAIN, 20));
 		panelNorte.add(lblBilbao);
 		
@@ -61,57 +58,36 @@ public class VentanaPoza extends JFrame {
 		});
 		
 		
-		
 		JPanel panelCentro = new JPanel();
 		contentPane.add(panelCentro, BorderLayout.CENTER);
 		panelCentro.setLayout(null);
 		
-		/*
-		 * FOTO ALEATORIA EN UN JLABEL
-		 * String[] imgs = {"FondoMenu.jpg","yo.png","IconoNick.png", "IconoTienda.jpg"};
-		Random r ;
-		r = new Random();
-		int index = r.nextInt(4);
-		Image im = new ImageIcon("Imagenes/" + imgs[index]).getImage();
-		ImageIcon icon = new ImageIcon(im);
-		
-		
-	//	Image img1 = new ImageIcon("Imagenes/locPoza.png").getImage();
-	//	ImageIcon img12 = new ImageIcon(img1.getScaledInstance(532, 302, Image.SCALE_SMOOTH));
-		JLabel lblFoto1 = new JLabel("");
-		lblFoto1.setBounds(552, 6, 532, 302);
-	//	lblFoto1.setIcon(img12);
-		lblFoto1.setIcon(icon);
-		panelCentro.add(lblFoto1);
-		
-		*/
-		
-		
-		Image img1 = new ImageIcon("Imagenes/locPoza.png").getImage();
+		Image img1 = new ImageIcon("Imagenes/fotoMadrid.jpg").getImage();
 		ImageIcon img12 = new ImageIcon(img1.getScaledInstance(532, 302, Image.SCALE_SMOOTH));
 		JLabel lblFoto1 = new JLabel("");
 		lblFoto1.setBounds(552, 6, 532, 302);
 		lblFoto1.setIcon(img12);
 		panelCentro.add(lblFoto1);
 		
-		Image img2 = new ImageIcon("Imagenes/FotoPoza.png").getImage();
+		Image img2 = new ImageIcon("Imagenes/locMadrid.png").getImage();
 		ImageIcon img22 = new ImageIcon(img2.getScaledInstance(532, 302, Image.SCALE_SMOOTH));
 		JLabel lblFoto2 = new JLabel("");
 		lblFoto2.setBounds(6, 6, 532, 302);
 		lblFoto2.setIcon(img22);
 		panelCentro.add(lblFoto2);
 		
-		String text = "Poza de la Sal es una villa situada a 43 km al norte de Burgos capital con unos 338 habitantes más o menos, ya que cada año va disminuyendo. Junto a los municipios de \n" + 
-				"Oña y Frías conforma la mancomunidad de Raices de Castilla. La localidad se encuentra enriscada en la ladera de una sierra, fortificada y protegida por el castillo de los \n" + 
-				"Rojas y con vistas sobre las llanuras de la comarca de La Bureba. La plaza vieja tiene un espolón el cuál es denominado el balcón de la bureba ya que desde hay se puede \n" + 
-				"ver toda la bureba. Este precioso pueblo fue declarado de conjunto Histórico-Artístico en 1982.\n" + 
-				"Decidimos abrir una tienda aquí ya que siempre que tengo un hueco me gusta escaparme al pueblo de mis abuelos en el que tan buenos momentos he pasado y porque \n" + 
-				"paso practicamente todas las vacaciones en él. De esta manera cada vez que me fuera al pueblo podría estar pendiente de que todo estaría funcionando correctamente \n"+
-				"por no hablar de la cantidad de camisetas, videojuegos, bicicletas... que se venden a lo largo del verano";
+		String text = "Madrid es un municipio y ciudad de España. La localidad, con categoría histórica de villa,9​ es la capital del Estado10​ y de la Comunidad de Madrid. Dentro del término  \n" + 
+				"municipal de Madrid, el más poblado de España, viven 3 182 981 personas empadronadas, según el INE de 2017. El área metropolitana de Madrid tiene una población de \n" + 
+				"6 543 031 habitantes,11​ por lo que es la tercera o cuarta área metropolitana de la Unión Europea, según la fuente, por detrás de las de París y Londres, y en \n" + 
+				"algunas fuentes detrás también de la Región del Ruhr, así como la tercera ciudad más poblada de la Unión Europea, por detrás de Berlín y Londres.\n"
+				+ "La ciudad cuenta con un PIB nominal de 227 411 millones USD y un PIB per cápita nominal de 34 425 USD, lo que representa un PIB PPA per cápita de 40 720 USD,16​ siendo la\n"
+				+ " 1.ª área metropolitana española en actividad económica; y la décima de Europa. Madrid es también la ciudad española con más pernoctaciones hoteleras" ;
+		
+		 
 		JTextArea txt = new JTextArea(text,20,10);
-		txt.setOpaque(false);
 		txt.setEditable(false);
-		txt.setBounds(6, 320, 1078, 115);
+		txt.setOpaque(false);
+		txt.setBounds(6, 326, 1078, 115);
 		panelCentro.add(txt);
 		
 

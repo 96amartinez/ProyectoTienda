@@ -68,7 +68,7 @@ public class VentanaSobreMi extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				v.dispose();
-				VentanaMenu vm = new VentanaMenu();
+				VentanaMenu vm = new VentanaMenu(v);
 				vm.setVisible(true);
 				
 			}
